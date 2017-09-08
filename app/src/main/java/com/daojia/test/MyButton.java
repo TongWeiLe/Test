@@ -25,6 +25,7 @@ public class MyButton extends android.support.v7.widget.AppCompatButton implemen
 
     public MyButton(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+
     }
 
 
@@ -37,6 +38,7 @@ public class MyButton extends android.support.v7.widget.AppCompatButton implemen
 
     @Override
     public boolean dispatchTouchEvent(MotionEvent event) {
+        this.setOnTouchListener(this);
         Log.e(TAG,"BUTTON dispatchTouchEvent");
         return super.dispatchTouchEvent(event);
     }

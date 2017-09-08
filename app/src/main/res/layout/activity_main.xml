@@ -3,11 +3,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.daojia.test.MainActivity">
+    android:orientation="vertical"
+    tools:context="com.daojia.test.activity.MainActivity">
     <com.daojia.test.MyListView
+        android:visibility="gone"
         android:id="@+id/lv_test"
         android:layout_width="match_parent"
         android:layout_height="match_parent"></com.daojia.test.MyListView>
+
+    <Button
+        android:id="@+id/bt_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 
 </LinearLayout>

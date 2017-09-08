@@ -44,10 +44,10 @@ public class MyListView extends ListView  implements View.OnTouchListener{
     public boolean dispatchTouchEvent(MotionEvent ev) {
         Log.e(TAG,"LISTVIEW  dispatchTouchEvent");
 
-        if (super.dispatchTouchEvent(ev)){
-            Log.e(TAG,"LISTVIEW  parent  dispatchTouchEvent");
-        }
-        return false;
+//        if (super.dispatchTouchEvent(ev)){
+//            Log.e(TAG,"LISTVIEW  parent  dispatchTouchEvent");
+//        }
+        return super.dispatchTouchEvent(ev);
     }
 
 
