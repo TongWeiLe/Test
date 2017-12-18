@@ -6,7 +6,7 @@ android {
     buildToolsVersion "25.0.2"
     defaultConfig {
         applicationId "com.daojia.test"
-        minSdkVersion 14
+        minSdkVersion 15
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
@@ -22,28 +22,7 @@ android {
 
 }
 
-apply plugin: 'replugin-host-gradle'
 
-/**
- * 配置项均为可选配置，默认无需添加
- * 更多可选配置项参见replugin-host-gradle的RepluginConfig类
- * 可更改配置项参见 自动生成RePluginHostConfig.java
- */
-repluginHostConfig {
-    /**
-     * 是否使用 AppCompat 库
-     * 不需要个性化配置时，无需添加
-     */
-    useAppCompat = true
-//    /**
-//     * 背景不透明的坑的数量
-//     * 不需要个性化配置时，无需添加
-//     */
-//    countNotTranslucentStandard = 6
-//    countNotTranslucentSingleTop = 2
-//    countNotTranslucentSingleTask = 3
-//    countNotTranslucentSingleInstance = 2
-}
 
 
 dependencies {
@@ -54,6 +33,5 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.squareup.okio:okio:1.13.0'
-    compile 'com.qihoo360.replugin:replugin-host-lib:2.2.0'
     testCompile 'junit:junit:4.12'
 }
