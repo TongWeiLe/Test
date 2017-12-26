@@ -1,5 +1,6 @@
 package com.daojia.test.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -9,10 +10,11 @@ import android.view.View;
 import com.daojia.test.MyListView;
 import com.daojia.test.R;
 import com.daojia.test.TestAdapter;
+import com.daojia.test.remote.SecondActiviy;
 
 public class MainActivity extends AppCompatActivity implements View.OnTouchListener{
 
-    final String TAG = "mainactivity";
+    private final static  String TAG = MainActivity.class.getName();
 
     MyListView listView;
 
@@ -27,8 +29,24 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
 
         listView.setAdapter(new TestAdapter(this));
 
+//        Plate<? extends Fruit> plate = new Plate<Fruit>(new Fruit());
+//
+//
+//        Food fruit = plate.getT();
+//
+//        Plate<? super Fruit> plate1 = new Plate<Food>(new Food());
+//
+//        plate1.setT(new Fruit());
+//        plate1.setT(new Apple());
+//
+//
+//        Food food = new Fruit();
+
 
 //        listView.setOnTouchListener(this);
+
+
+       startActivity(new Intent(this, SecondActiviy.class));
 
 
     }
